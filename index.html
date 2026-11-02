@@ -1,0 +1,366 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beamae A. Ejercito | Personal Website</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: #080808;
+            color: white;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #111;
+            padding: 22px;
+            text-align: center;
+            border-bottom: 3px solid #e50914;
+        }
+
+        header h1 {
+            color: #e50914;
+            letter-spacing: 2px;
+            margin-bottom: 12px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 18px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #287bff;
+        }
+
+        section {
+            max-width: 1000px;
+            margin: 35px auto;
+            padding: 30px;
+            background: #151515;
+            border: 1px solid #292929;
+            border-radius: 12px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #e50914;
+            margin-bottom: 22px;
+        }
+
+        .profile {
+            text-align: center;
+            padding: 45px 20px;
+        }
+
+        .profile img {
+            width: 190px;
+            height: 190px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 5px solid #e50914;
+            margin-bottom: 15px;
+        }
+
+        .profile h2 {
+            color: white;
+            font-size: 29px;
+            margin-bottom: 5px;
+        }
+
+        .profile p {
+            color: #287bff;
+            font-size: 18px;
+        }
+
+        .introduction {
+            text-align: center;
+        }
+
+        .introduction p {
+            color: #ddd;
+            font-size: 17px;
+        }
+
+        .about p {
+            background: #202020;
+            padding: 13px;
+            margin: 12px 0;
+            border-left: 4px solid #287bff;
+            border-radius: 5px;
+        }
+
+        .about strong {
+            color: #e50914;
+        }
+
+        .hobbies-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 18px;
+        }
+
+        .hobby-card {
+            background: #202020;
+            padding: 15px;
+            text-align: center;
+            border-radius: 10px;
+            border: 1px solid #333;
+        }
+
+        .hobby-card img,
+        .hobby-card video {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .hobby-card h3 {
+            color: #287bff;
+        }
+
+        .colors {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .color-card {
+            text-align: center;
+        }
+
+        .color-box {
+            width: 100px;
+            height: 100px;
+            border: 2px solid white;
+            border-radius: 12px;
+            margin-bottom: 10px;
+        }
+
+        .red { background: red; }
+        .black { background: black; }
+        .blue { background: blue; }
+
+        .food-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 15px;
+        }
+
+        .food-item {
+            background: #202020;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 3px solid #e50914;
+            border-radius: 10px;
+            font-size: 18px;
+        }
+
+        .website-list {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .website-list a {
+            background: #287bff;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 7px;
+            transition: 0.3s;
+        }
+
+        .website-list a:hover {
+            background: #e50914;
+        }
+
+        footer {
+            background: #111;
+            text-align: center;
+            padding: 22px;
+            margin-top: 40px;
+            border-top: 3px solid #e50914;
+            color: #aaa;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 22px;
+            }
+
+            section {
+                margin: 20px 12px;
+                padding: 20px;
+            }
+
+            .profile h2 {
+                font-size: 23px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>MY PERSONAL WEBSITE</h1>
+
+        <nav>
+            <a href="#profile">PROFILE</a>
+            <a href="#introduction">INTRODUCTION</a>
+            <a href="#about">ABOUT ME</a>
+            <a href="#hobbies">HOBBIES</a>
+            <a href="#colors">COLORS</a>
+            <a href="#food">FOOD</a>
+            <a href="#websites">WEBSITES</a>
+        </nav>
+    </header>
+
+    <section class="profile" id="profile">
+        <h2>MY PROFILE</h2>
+
+        <img src="assets/profile.jpg" alt="My Profile Picture">
+
+        <h2>BEAMAE A. EJERCITO</h2>
+        <p>BSIT STUDENT</p>
+    </section>
+
+    <section class="introduction" id="introduction">
+        <h2>MY INTRODUCTION</h2>
+
+        <p>
+            Hello! My name is Beamae A. Ejercito.
+            I am a BSIT student who enjoys learning new things
+            and exploring my interests. I love expressing myself
+            through my hobbies and spending time doing the things
+            that make me happy. Welcome to my personal website!
+        </p>
+    </section>
+
+    <section class="about" id="about">
+        <h2>ABOUT ME</h2>
+
+        <p><strong>Birthday:</strong> May 13, 2007</p>
+        <p><strong>Address:</strong> Cabcaban, Bindoy, Negros Oriental</p>
+        <p><strong>School:</strong> NORSU Bais Campus</p>
+        <p><strong>Course:</strong> Bachelor of Science in Information Technology (BSIT)</p>
+    </section>
+
+    <section id="hobbies">
+        <h2>MY HOBBIES</h2>
+
+        <div class="hobbies-grid">
+
+            <div class="hobby-card">
+                <img src="assets/drawing.jpg" alt="Drawing">
+                <h3>Drawing and Painting</h3>
+            </div>
+
+            <div class="hobby-card">
+                <img src="assets/music.jpg" alt="Playing Instruments">
+                <h3>Playing Musical Instruments</h3>
+            </div>
+
+            <div class="hobby-card">
+                <video controls>
+                    <source src="assets/singing.mp4" type="video/mp4">
+                </video>
+                <h3>Singing</h3>
+            </div>
+
+            <div class="hobby-card">
+                <video controls>
+                    <source src="assets/dancing.mp4" type="video/mp4">
+                </video>
+                <h3>Dancing</h3>
+            </div>
+
+            <div class="hobby-card">
+                <img src="assets/cooking.jpg" alt="Cooking">
+                <h3>Cooking</h3>
+            </div>
+
+            <div class="hobby-card">
+                <img src="assets/volleyball.jpg" alt="Volleyball">
+                <h3>Playing Volleyball</h3>
+            </div>
+
+            <div class="hobby-card">
+                <img src="assets/sleeping.jpg" alt="Sleeping">
+                <h3>Sleeping</h3>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="colors">
+        <h2>MY FAVORITE COLORS</h2>
+
+        <div class="colors">
+            <div class="color-card">
+                <div class="color-box red"></div>
+                <h3>Red</h3>
+            </div>
+
+            <div class="color-card">
+                <div class="color-box black"></div>
+                <h3>Black</h3>
+            </div>
+
+            <div class="color-card">
+                <div class="color-box blue"></div>
+                <h3>Blue</h3>
+            </div>
+        </div>
+    </section>
+
+    <section id="food">
+        <h2>MY FAVORITE FOOD</h2>
+
+        <div class="food-list">
+            <div class="food-item">Spaghetti</div>
+            <div class="food-item">Lechon Manok</div>
+            <div class="food-item">Sisig</div>
+        </div>
+    </section>
+
+    <section id="websites">
+        <h2>MY FAVORITE WEBSITES</h2>
+
+        <div class="website-list">
+            <a href="https://www.wattpad.com/" target="_blank">Wattpad</a>
+            <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+            <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>Copyright 2026 BEAMAE A. EJERCITO</p>
+        <p>MY PERSONAL WEBSITE</p>
+    </footer>
+
+</body>
+</html>
