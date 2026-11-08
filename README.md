@@ -1,74 +1,69 @@
-# 🔴⚫🔵 Beamae Ejercito — Personal Profile
-
-> **Black • Red • Blue** — my favorite colors and the theme of my profile.
-
-![Black badge](https://img.shields.io/badge/Favorite%20color-Black-111111?style=for-the-badge)
-![Red badge](https://img.shields.io/badge/Favorite%20color-Red-E50914?style=for-the-badge)
-![Blue badge](https://img.shields.io/badge/Favorite%20color-Blue-287BFF?style=for-the-badge)
-
-## 🔴 Profile Picture
+# BEAMAE EJERCITO
 
 <p align="center">
-  <img src="profile.jpg" alt="Beamae Ejercito" width="220">
+  <img src="readme-banner.svg" alt="Beamae Ejercito banner" width="100%">
 </p>
 
-## 🔵 Hello, I'm Beamae!
+I am Beamae Ejercito, but you can call me Bea for short. I am a BSIT student at NORSU Bais.
 
-I am **Beamae Ejercito**—Bea for short—and a **BSIT student at NORSU Bais**.
+## About Me
 
-## ⚫ About Me
+- Born: May 13, 2007
+- Hometown: Cabcaban, Bindoy, Negros Oriental
 
-- **Born:** May 13, 2007
-- **Hometown:** Cabcaban, Bindoy, Negros Oriental
+## Favorite Colors
 
-## 🔴 Favorite Colors
+- Black
+- Red
+- Blue
 
-| Black | Red | Blue |
-|:---:|:---:|:---:|
-| `#111111` | `#E50914` | `#287BFF` |
-
-## 🔵 Favorite Food
+## Favorite Food
 
 - Chocolate
 - Sisig
 - Spaghetti
 
-## ⚫ My Hobbies
+## My Hobbies
 
-### Drawing and painting
-![Beamae's drawing](drawing.jpg)
+- Drawing and painting
+- Playing musical instruments
+- Cooking
+- Playing volleyball
+- Singing
+- Dancing
+- Sleeping
 
-### Playing musical instruments
-![Playing musical instruments](music.jpg)
-
-### Singing
-[▶ Watch or open my singing video](singing.mp4)
-
-### Dancing
-[▶ Watch or open my dancing video](dancing.mp4)
-
-### Cooking
-![Cooking](cooking.jpg)
-
-### Playing volleyball
-![Playing volleyball](volleyball.jpg)
-
-### Sleeping
-![Sleeping](sleeping.jpg)
-
-> GitHub README pages show these video files as links; select a link to open the video.
-
-## 🔴 My Favorite Websites
+## Favorite Websites
 
 - [Wattpad](https://www.wattpad.com/)
 - [Facebook](https://www.facebook.com/)
 - [TikTok](https://www.tiktok.com/)
 - [Instagram](https://www.instagram.com/)
 
-## 🔵 Visit My Website
+## Profile Picture
+
+<p align="center">
+  <img src="profile.jpg" alt="Beamae profile picture" width="220">
+</p>
+
+## Hobby Photos
+
+<p align="center">
+  <img src="drawing.jpg" alt="Drawing and painting" width="240">
+  <img src="music.jpg" alt="Playing musical instruments" width="240">
+  <img src="cooking.jpg" alt="Cooking" width="240">
+</p>
+
+<p align="center">
+  <img src="volleyball.jpg" alt="Playing volleyball" width="240">
+  <img src="sleeping.jpg" alt="Sleeping" width="240">
+</p>
+
+## Videos
+
+- [Singing video](singing.mp4)
+- [Dancing video](dancing.mp4)
+
+## My Website
 
 [Open my personal website](https://beamaae.github.io/MyPersonalWebsite/)
-
----
-
-<p align="center">🔴 ⚫ 🔵</p>
