@@ -9,3 +9,13 @@ We are five BSIT students from Negros Oriental State University. This website in
 - [Michelle L. Detuya](michelle.html)
 - [Jino P. Martinez](jino.html)
 - [Joviel P. Landiza](joviel.html)
+
+## KAKAMPINK Team
+
+| Member | Assigned Role |
+|---|---|
+| Michelle L. Detuya | Team Leader |
+| Beamae Ejercito | Lead Coder |
+| Bea Jean A. Bacaoco | Content Writer |
+| Jino P. Martinez | Tester |
+| Joviel P. Landiza | Coder 2 |
