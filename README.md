@@ -1,69 +1,114 @@
-# BEAMAE EJERCITO
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KAKAMPINK | Group Portfolio</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
 
-<p align="center">
-  <img src="readme-banner.svg" alt="Beamae Ejercito banner" width="100%">
-</p>
+<header>
+    <a href="#home" class="logo">KAKAMPINK.</a>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#members">Members</a>
+    </nav>
+</header>
 
-I am Beamae Ejercito, but you can call me Bea for short. I am a BSIT student at NORSU Bais.
+<section class="hero" id="home">
+    <div class="hero-content">
+        <p class="eyebrow">A GROUP PORTFOLIO PROJECT</p>
+        <h1>Five Individuals.<br><span>One Team.</span></h1>
 
-## About Me
+        <h2>Welcome to KAKAMPINK!</h2>
 
-- Born: May 13, 2007
-- Hometown: Cabcaban, Bindoy, Negros Oriental
+        <p>
+            We are a group of five students who share different
+            personalities, interests, talents, and dreams.
+            Although we have different preferences and hobbies,
+            we are united by friendship, teamwork, creativity,
+            and our passion for learning.
+        </p>
 
-## Favorite Colors
+        <p>
+            This website is a collection of our individual
+            personalities and interests. Get to know each member
+            through their own personal website, where you can
+            discover their stories, favorite things, hobbies,
+            and unique identities.
+        </p>
 
-- Black
-- Red
-- Blue
+        <p>
+            Five individuals, five different personalities,
+            one team. Welcome to KAKAMPINK!
+        </p>
 
-## Favorite Food
+        <a href="#members" class="btn">Meet Our Members</a>
+    </div>
+</section>
 
-- Chocolate
-- Sisig
-- Spaghetti
+<section id="about" class="section">
+    <h2>About Our Group</h2>
+    <p>
+        KAKAMPINK is a group of five students with different
+        personalities, interests, talents, and dreams.
+        We created this website to showcase our individual
+        identities, creativity, and personal experiences.
+    </p>
+</section>
 
-## My Hobbies
+<section id="members" class="section members">
+    <h2>Meet Our Members</h2>
+    <p>Click a profile to visit an individual website.</p>
 
-- Drawing and painting
-- Playing musical instruments
-- Cooking
-- Playing volleyball
-- Singing
-- Dancing
-- Sleeping
+    <div class="member-grid">
 
-## Favorite Websites
+        <a href="beamae/index.html" class="member-card">
+            <img src="beamae/assets/profile.svg" alt="Beamae">
+            <h3>BEAMAE EJERCITO</h3>
+            <p>Creative mind and future IT professional.</p>
+            <span>Visit Website →</span>
+        </a>
 
-- [Wattpad](https://www.wattpad.com/)
-- [Facebook](https://www.facebook.com/)
-- [TikTok](https://www.tiktok.com/)
-- [Instagram](https://www.instagram.com/)
+        <a href="beajean/index.html" class="member-card">
+            <img src="beajean/assets/profile.svg" alt="Bea Jean">
+            <h3>BEA JEAN</h3>
+            <p>A cozy personality who loves movies.</p>
+            <span>Visit Website →</span>
+        </a>
 
-## Profile Picture
+        <a href="mechill/index.html" class="member-card">
+            <img src="mechill/assets/profile.svg" alt="Mechill">
+            <h3>MECHILL</h3>
+            <p>Nature lover and music enthusiast.</p>
+            <span>Visit Website →</span>
+        </a>
 
-<p align="center">
-  <img src="profile.jpg" alt="Beamae profile picture" width="220">
-</p>
+        <a href="jino/index.html" class="member-card">
+            <img src="jino/assets/profile.svg" alt="Jino">
+            <h3>JINO</h3>
+            <p>Gaming, food, and music lover.</p>
+            <span>Visit Website →</span>
+        </a>
 
-## Hobby Photos
+        <a href="joviel/index.html" class="member-card">
+            <img src="joviel/assets/profile.svg" alt="Joviel">
+            <h3>JOVIEL</h3>
+            <p>Sports, games, music, and anime.</p>
+            <span>Visit Website →</span>
+        </a>
 
-<p align="center">
-  <img src="drawing.jpg" alt="Drawing and painting" width="240">
-  <img src="music.jpg" alt="Playing musical instruments" width="240">
-  <img src="cooking.jpg" alt="Cooking" width="240">
-</p>
+    </div>
+</section>
 
-<p align="center">
-  <img src="volleyball.jpg" alt="Playing volleyball" width="240">
-  <img src="sleeping.jpg" alt="Sleeping" width="240">
-</p>
+<footer>
+    <h2>KAKAMPINK.</h2>
+    <p>Five Different Personalities, One Team.</p>
+    <p>© 2026 KAKAMPINK Group Portfolio</p>
+</footer>
 
-## Videos
-
-- [Singing video](singing.mp4)
-- [Dancing video](dancing.mp4)
-
-## My Website
-
-[Open my personal website](https://beamaae.github.io/MyPersonalWebsite/)
+<script src="main.js"></script>
+</body>
+</html>
