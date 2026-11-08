@@ -23,8 +23,21 @@ A personal profile website for Beamae A. Ejercito.
 ### Sleeping
 ![Sleeping](sleeping.jpg)
 
-### Singing and dancing
-[Watch my singing video](singing.mp4) · [Watch my dancing video](dancing.mp4)
+## Singing video
+
+[Open or download my singing video](singing.mp4)
+
+<video controls width="480" src="singing.mp4">
+  Your browser cannot display this video. [Open the singing video](singing.mp4).
+</video>
+
+## Dancing video
+
+[Open or download my dancing video](dancing.mp4)
+
+<video controls width="480" src="dancing.mp4">
+  Your browser cannot display this video. [Open the dancing video](dancing.mp4).
+</video>
 
 ## Website
 
