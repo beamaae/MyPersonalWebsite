@@ -1,44 +1,47 @@
 # My Personal Website
 
-A personal profile website for Beamae A. Ejercito.
+## Profile Picture
 
-## Profile picture
+![Beamae A. Ejercito](profile.jpg)
 
-![Beamae A. Ejercito's profile picture](profile.jpg)
+## I am Beamae Ejercito
 
-## My hobbies
+Hi! I am Beamae Ejercito, but you can call me Bea for short. I am a BSIT student at NORSU Bais.
 
-### Drawing and painting
-![Drawing and painting](drawing.jpg)
+## About Me
 
-### Playing musical instruments
-![Playing musical instruments](music.jpg)
+- Born: May 13, 2007
+- Hometown: Cabcaban, Bindoy, Negros Oriental
 
-### Cooking
-![Cooking](cooking.jpg)
+## Favorite Colors
 
-### Playing volleyball
-![Playing volleyball](volleyball.jpg)
+- Black
+- Red
+- Blue
 
-### Sleeping
-![Sleeping](sleeping.jpg)
+## Favorite Food
 
-## Singing video
+- Chocolate
+- Sisig
+- Spaghetti
 
-[Open or download my singing video](singing.mp4)
+## My Hobbies
 
-<video controls width="480" src="singing.mp4">
-  Your browser cannot display this video. [Open the singing video](singing.mp4).
-</video>
+- Drawing and painting
+- Playing musical instruments
+- Cooking
+- Playing volleyball
+- Singing
+- Dancing
+- Sleeping
 
-## Dancing video
+## My Favorite Websites
 
-[Open or download my dancing video](dancing.mp4)
-
-<video controls width="480" src="dancing.mp4">
-  Your browser cannot display this video. [Open the dancing video](dancing.mp4).
-</video>
+- Wattpad
+- Facebook
+- TikTok
+- Instagram
 
 ## Website
 
-Visit the website: https://beamaae.github.io/MyPersonalWebsite/
+Visit my website: https://beamaae.github.io/MyPersonalWebsite/
