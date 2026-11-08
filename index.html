@@ -3,376 +3,244 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Meet Beamae A. Ejercito, a BSIT student who loves drawing, music, singing, dancing, cooking, and volleyball.">
-    <title>Beamae A. Ejercito | Personal Website</title>
-
+    <meta name="description" content="Meet the KAKAMPINK crew—a close group of friends sharing good vibes and great memories.">
+    <title>KAKAMPINK | Our Crew</title>
     <style>
         :root {
-            --black: #080808;
-            --surface: #151515;
-            --surface-light: #202020;
-            --red: #e50914;
-            --blue: #287bff;
+            --pink: #ec4f9a;
+            --pink-light: #ffe2f0;
+            --purple: #7040a6;
+            --ink: #321c35;
+            --muted: #715c72;
+            --paper: #fff8fc;
             --white: #fff;
-            --muted: #ccc;
         }
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-            scroll-behavior: smooth;
-        }
-
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; }
         body {
-            background: var(--black);
-            color: var(--white);
+            font-family: Arial, Helvetica, sans-serif;
+            color: var(--ink);
+            background: linear-gradient(180deg, #fff5fa 0%, #fff 100%);
             line-height: 1.6;
         }
+        a { color: inherit; text-decoration: none; }
+        .container { width: min(1080px, calc(100% - 32px)); margin: 0 auto; }
 
         header {
-            background: #101010;
-            padding: 22px;
-            text-align: center;
-            border-bottom: 3px solid var(--red);
+            position: sticky;
+            top: 0;
+            z-index: 5;
+            background: rgba(255,255,255,.9);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid #f5dce9;
         }
-
-        header h1 {
-            color: var(--red);
-            letter-spacing: 2px;
-            margin-bottom: 12px;
-        }
-
-        nav {
+        .nav-wrap {
+            min-height: 72px;
             display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 18px;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
         }
+        .brand { color: var(--purple); font-weight: 900; letter-spacing: 2px; }
+        nav { display: flex; flex-wrap: wrap; gap: 20px; font-size: .92rem; font-weight: 700; }
+        nav a:hover, nav a:focus-visible { color: var(--pink); }
 
-        nav a {
+        .hero { padding: 76px 0 52px; text-align: center; }
+        .eyebrow {
+            display: inline-block;
+            margin-bottom: 16px;
+            padding: 7px 14px;
+            border-radius: 999px;
+            background: var(--pink-light);
+            color: var(--purple);
+            font-size: .78rem;
+            font-weight: 800;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+        h1 { font-size: clamp(2.7rem, 7vw, 5rem); line-height: 1.05; margin-bottom: 18px; }
+        .gradient { color: var(--pink); }
+        .hero p { max-width: 650px; margin: 0 auto 26px; color: var(--muted); font-size: 1.08rem; }
+        .button {
+            display: inline-block;
+            padding: 12px 22px;
+            border-radius: 999px;
             color: var(--white);
-            text-decoration: none;
-            font-size: 14px;
-            transition: color 0.2s ease;
+            background: linear-gradient(135deg, var(--pink), var(--purple));
+            font-weight: 800;
+            box-shadow: 0 9px 22px rgba(173, 59, 126, .2);
+            transition: transform .2s ease;
         }
+        .button:hover, .button:focus-visible { transform: translateY(-2px); }
 
-        nav a:hover,
-        nav a:focus-visible {
-            color: var(--blue);
+        section { padding: 42px 0; }
+        .section-heading { text-align: center; margin-bottom: 30px; }
+        .section-heading h2 { font-size: clamp(2rem, 4vw, 2.8rem); margin-bottom: 8px; }
+        .section-heading p { max-width: 620px; margin: auto; color: var(--muted); }
+
+        .members {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+            gap: 24px;
+            align-items: start;
         }
-
-        section {
-            max-width: 1000px;
-            margin: 35px auto;
-            padding: 30px;
-            background: var(--surface);
-            border: 1px solid #292929;
-            border-radius: 12px;
-            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
-        }
-
-        h2 {
+        .member {
             text-align: center;
-            color: var(--red);
-            margin-bottom: 22px;
+            padding: 24px 16px;
+            border: 1px solid #f4dce9;
+            border-radius: 22px;
+            background: rgba(255,255,255,.85);
+            box-shadow: 0 12px 28px rgba(79, 37, 75, .07);
         }
-
-        .profile {
-            text-align: center;
-            padding: 45px 20px;
-            border-top: 3px solid var(--blue);
-        }
-
-        .profile img {
-            width: 190px;
-            height: 190px;
-            object-fit: cover;
+        /* Names are placed above each circular portrait. */
+        .member h3 { color: var(--purple); font-size: 1.2rem; margin-bottom: 15px; }
+        .portrait {
+            width: 170px;
+            height: 170px;
+            margin: 0 auto 14px;
             border-radius: 50%;
-            border: 5px solid var(--red);
-            outline: 3px solid var(--blue);
-            outline-offset: 4px;
-            margin: 0 auto 20px;
-            display: block;
+            overflow: hidden;
+            border: 6px solid var(--pink-light);
+            outline: 2px solid var(--pink);
+            background: var(--pink-light);
         }
+        .portrait img { width: 100%; height: 100%; object-fit: cover; }
+        .member p { color: var(--muted); font-size: .93rem; }
 
-        .profile h2 {
-            color: var(--white);
-            font-size: 29px;
-            margin-bottom: 5px;
-        }
-
-        .profile p {
-            color: var(--blue);
-            font-size: 18px;
-            font-weight: bold;
-        }
-
-        .introduction {
+        .about-card {
+            max-width: 820px;
+            margin: auto;
+            padding: 30px;
             text-align: center;
+            border: 1px solid #f4dce9;
+            border-radius: 24px;
+            background: var(--white);
+            box-shadow: 0 14px 32px rgba(79, 37, 75, .06);
         }
-
-        .introduction p {
-            color: #ddd;
-            font-size: 17px;
-        }
-
-        .about p {
-            background: var(--surface-light);
-            padding: 13px;
-            margin: 12px 0;
-            border-left: 4px solid var(--blue);
-            border-radius: 5px;
-        }
-
-        .about strong {
-            color: var(--red);
-        }
-
-        .hobbies-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 18px;
-        }
-
-        .hobby-card {
-            background: var(--surface-light);
-            padding: 15px;
-            text-align: center;
-            border-radius: 10px;
-            border: 1px solid #333;
-            border-bottom: 3px solid var(--red);
-            transition: transform 0.2s ease, border-color 0.2s ease;
-        }
-
-        .hobby-card:hover {
-            transform: translateY(-4px);
-            border-bottom-color: var(--blue);
-        }
-
-        .hobby-card img,
-        .hobby-card video {
-            width: 100%;
-            height: 180px;
-            object-fit: cover;
-            border-radius: 8px;
-            margin-bottom: 10px;
-        }
-
-        .hobby-card h3 {
-            color: var(--blue);
-        }
-
-        .colors {
+        .about-card p { color: var(--muted); }
+        .values {
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
-            gap: 30px;
+            gap: 12px;
+            margin-top: 20px;
         }
-
-        .color-card {
+        .values span {
+            padding: 9px 15px;
+            border-radius: 999px;
+            background: var(--pink-light);
+            color: var(--purple);
+            font-weight: 700;
+        }
+        .closing { padding: 32px 0 60px; }
+        .closing-card {
+            padding: 34px 22px;
             text-align: center;
-        }
-
-        .color-box {
-            width: 100px;
-            height: 100px;
-            border: 2px solid var(--white);
-            border-radius: 12px;
-            margin-bottom: 10px;
-        }
-
-        .red { background: var(--red); }
-        .black { background: var(--black); }
-        .blue { background: var(--blue); }
-
-        .food-list {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-            gap: 15px;
-        }
-
-        .food-item {
-            background: var(--surface-light);
-            padding: 20px;
-            text-align: center;
-            border-bottom: 3px solid var(--red);
-            border-radius: 10px;
-            font-size: 18px;
-        }
-
-        .website-list {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 15px;
-        }
-
-        .website-list a {
-            background: var(--blue);
+            border-radius: 26px;
             color: var(--white);
-            padding: 12px 25px;
-            text-decoration: none;
-            border-radius: 7px;
-            transition: background 0.3s ease;
+            background: linear-gradient(135deg, #422344, var(--purple));
         }
+        .closing-card h2 { font-size: clamp(1.7rem, 4vw, 2.5rem); margin-bottom: 8px; }
+        .closing-card p { color: rgba(255,255,255,.82); }
+        footer { padding: 24px 16px 34px; text-align: center; color: var(--muted); border-top: 1px solid #f5dce9; }
 
-        .website-list a:hover {
-            background: var(--red);
-        }
-
-        footer {
-            background: #101010;
-            text-align: center;
-            padding: 22px;
-            margin-top: 40px;
-            border-top: 3px solid var(--red);
-            color: #aaa;
-        }
-
-        footer p + p {
-            color: var(--blue);
-        }
-
-        @media (max-width: 600px) {
-            header h1 {
-                font-size: 22px;
-            }
-
-            section {
-                margin: 20px 12px;
-                padding: 20px;
-            }
-
-            .profile h2 {
-                font-size: 23px;
-            }
+        @media (max-width: 620px) {
+            .nav-wrap { flex-direction: column; justify-content: center; padding: 14px 0; }
+            nav { justify-content: center; gap: 10px 16px; }
+            .hero { padding-top: 52px; }
+            .portrait { width: 150px; height: 150px; }
+            .about-card { padding: 23px 18px; }
         }
     </style>
 </head>
-
 <body>
     <header>
-        <h1>MY PERSONAL WEBSITE</h1>
-        <nav aria-label="Main navigation">
-            <a href="#profile">PROFILE</a>
-            <a href="#introduction">INTRODUCTION</a>
-            <a href="#about">ABOUT ME</a>
-            <a href="#hobbies">HOBBIES</a>
-            <a href="#colors">COLORS</a>
-            <a href="#food">FOOD</a>
-            <a href="#websites">WEBSITES</a>
-        </nav>
+        <div class="container nav-wrap">
+            <a class="brand" href="#home">KAKAMPINK</a>
+            <nav aria-label="Main navigation">
+                <a href="#home">Home</a>
+                <a href="#members">Our Members</a>
+                <a href="#about">About Us</a>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <section class="profile" id="profile">
-            <h2>MY PROFILE</h2>
-            <img src="profile.jpg" alt="Beamae A. Ejercito's profile picture">
-            <h2>BEAMAE A. EJERCITO</h2>
-            <p>BSIT STUDENT</p>
+        <section class="hero" id="home">
+            <div class="container">
+                <span class="eyebrow">Friendship • Fun • Forever</span>
+                <h1>Meet the <span class="gradient">KAKAMPINK</span> Crew</h1>
+                <p>A circle of friends sharing laughter, support, and memories. Get to know the people who make our group special!</p>
+                <a class="button" href="#members">Meet Our Members</a>
+            </div>
         </section>
 
-        <section class="introduction" id="introduction">
-            <h2>MY INTRODUCTION</h2>
-            <p>
-                Hello! My name is Beamae A. Ejercito.
-                I am a BSIT student who enjoys learning new things
-                and exploring my interests. I love expressing myself
-                through my hobbies and spending time doing the things
-                that make me happy. Welcome to my personal website!
-            </p>
-        </section>
-
-        <section class="about" id="about">
-            <h2>ABOUT ME</h2>
-            <p><strong>Birthday:</strong> May 13, 2007</p>
-            <p><strong>Address:</strong> Cabcaban, Bindoy, Negros Oriental</p>
-            <p><strong>School:</strong> NORSU Bais Campus</p>
-            <p><strong>Course:</strong> Bachelor of Science in Information Technology (BSIT)</p>
-        </section>
-
-        <section id="hobbies">
-            <h2>MY HOBBIES</h2>
-            <div class="hobbies-grid">
-                <div class="hobby-card">
-                    <img src="drawing.jpg" alt="Drawing and painting">
-                    <h3>Drawing and Painting</h3>
+        <section id="members">
+            <div class="container">
+                <div class="section-heading">
+                    <h2>Our Members</h2>
+                    <p>Each friend brings their own personality and sparkle to our group.</p>
                 </div>
-                <div class="hobby-card">
-                    <img src="music.jpg" alt="Playing musical instruments">
-                    <h3>Playing Musical Instruments</h3>
-                </div>
-                <div class="hobby-card">
-                    <video controls preload="metadata" aria-label="Video of Beamae singing">
-                        <source src="singing.mp4" type="video/mp4">
-                        Your browser does not support video playback.
-                    </video>
-                    <h3>Singing</h3>
-                </div>
-                <div class="hobby-card">
-                    <video controls preload="metadata" aria-label="Video of Beamae dancing">
-                        <source src="dancing.mp4" type="video/mp4">
-                        Your browser does not support video playback.
-                    </video>
-                    <h3>Dancing</h3>
-                </div>
-                <div class="hobby-card">
-                    <img src="cooking.jpg" alt="Cooking">
-                    <h3>Cooking</h3>
-                </div>
-                <div class="hobby-card">
-                    <img src="volleyball.jpg" alt="Playing volleyball">
-                    <h3>Playing Volleyball</h3>
-                </div>
-                <div class="hobby-card">
-                    <img src="sleeping.jpg" alt="Sleeping">
-                    <h3>Sleeping</h3>
+                <div class="members">
+                    <article class="member">
+                        <h3>Beamae</h3>
+                        <div class="portrait"><img src="profile.jpg" alt="Beamae's profile photo"></div>
+                        <p>A cheerful friend who loves sharing good vibes.</p>
+                    </article>
+                    <article class="member">
+                        <h3>Joviel</h3>
+                        <div class="portrait"><img src="JOVIEL.jpg" alt="Joviel's profile photo"></div>
+                        <p>Bringing a bright smile and fun energy to the crew.</p>
+                    </article>
+                    <article class="member">
+                        <h3>Michell</h3>
+                        <div class="portrait"><img src="MICHELL.jpg" alt="Michell's profile photo"></div>
+                        <p>A valued friend who makes every moment memorable.</p>
+                    </article>
+                    <article class="member">
+                        <h3>Bea Jean</h3>
+                        <div class="portrait"><img src="bea%20jean.jpg" alt="Bea Jean's profile photo"></div>
+                        <p>Sharing kindness, laughter, and a warm heart.</p>
+                    </article>
+                    <article class="member">
+                        <h3>Jino</h3>
+                        <div class="portrait"><img src="jino%20(2).jpg" alt="Jino's profile photo"></div>
+                        <p>Adding their own special spark to our friendship.</p>
+                    </article>
                 </div>
             </div>
         </section>
 
-        <section id="colors">
-            <h2>MY FAVORITE COLORS</h2>
-            <div class="colors">
-                <div class="color-card">
-                    <div class="color-box red" aria-label="Red color swatch"></div>
-                    <h3>Red</h3>
+        <section id="about">
+            <div class="container">
+                <div class="section-heading">
+                    <h2>About KAKAMPINK</h2>
                 </div>
-                <div class="color-card">
-                    <div class="color-box black" aria-label="Black color swatch"></div>
-                    <h3>Black</h3>
-                </div>
-                <div class="color-card">
-                    <div class="color-box blue" aria-label="Blue color swatch"></div>
-                    <h3>Blue</h3>
+                <div class="about-card">
+                    <p>We are a close group of friends who value kindness, loyalty, and making time for each other. Whether we are celebrating a win or simply sharing a laugh, we are happiest when we are together. KAKAMPINK is our little reminder that friendship makes life brighter.</p>
+                    <div class="values" aria-label="Our group values">
+                        <span>Friendship</span>
+                        <span>Support</span>
+                        <span>Laughter</span>
+                        <span>Memories</span>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="food">
-            <h2>MY FAVORITE FOOD</h2>
-            <div class="food-list">
-                <div class="food-item">Spaghetti</div>
-                <div class="food-item">Lechon Manok</div>
-                <div class="food-item">Sisig</div>
-            </div>
-        </section>
-
-        <section id="websites">
-            <h2>MY FAVORITE WEBSITES</h2>
-            <div class="website-list">
-                <a href="https://www.wattpad.com/" target="_blank" rel="noopener noreferrer">Wattpad</a>
-                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a>
-                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <section class="closing">
+            <div class="container">
+                <div class="closing-card">
+                    <h2>Better together, always.</h2>
+                    <p>That’s the KAKAMPINK way—friends who show up for one another.</p>
+                </div>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>Copyright 2026 BEAMAE A. EJERCITO</p>
-        <p>MY PERSONAL WEBSITE</p>
+        <p>© 2026 KAKAMPINK • Made with friendship and pink energy.</p>
     </footer>
 </body>
 </html>
