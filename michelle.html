@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Michelle L. Detuya's kakamPINK profile.">
+  <title>Michelle L. Detuya | kakamPINK</title>
+  <style>
+    :root { --pink: #e94b91; --pale: #fff0f6; --ink: #3d2935; --muted: #715e69; }
+    * { box-sizing: border-box; }
+    body { min-height: 100vh; margin: 0; padding: 24px; font-family: Arial, Helvetica, sans-serif; color: var(--ink); background: linear-gradient(145deg, #fff7fb, #ffe5f0); }
+    main { width: min(100%, 760px); margin: 0 auto; padding: clamp(24px, 6vw, 48px); background: #fff; border: 1px solid #f8d5e5; border-radius: 24px; box-shadow: 0 18px 50px #7f315219; }
+    .back { display: inline-block; margin-bottom: 24px; color: #a52e67; font-weight: 700; text-underline-offset: 4px; }
+    .back:focus-visible, a:focus-visible { outline: 3px solid #f4a8c9; outline-offset: 4px; }
+    .profile { display: grid; grid-template-columns: minmax(120px, 190px) 1fr; gap: 28px; align-items: center; }
+    .profile img { display: block; width: 100%; aspect-ratio: 1; object-fit: cover; border: 6px solid var(--pale); border-radius: 50%; }
+    h1 { margin: 0 0 10px; color: var(--pink); font-size: clamp(1.8rem, 6vw, 2.7rem); line-height: 1.15; }
+    .intro { color: var(--muted); line-height: 1.65; }
+    h2 { margin: 28px 0 8px; color: #a52e67; font-size: 1.15rem; }
+    p, ul { line-height: 1.65; }
+    ul { margin: 0; padding-left: 1.35rem; }
+    .unknown { color: var(--muted); }
+    @media (max-width: 520px) { body { padding: 14px; } .profile { grid-template-columns: 1fr; gap: 18px; } .profile img { width: min(58vw, 190px); } }
+  </style>
+</head>
+<body>
+  <main>
+    <a class="back" href="index.html">← Back to kakamPINK</a>
+    <section class="profile" aria-labelledby="name">
+      <img src="MICHELL.jpg" alt="Profile picture for Michelle L. Detuya">
+      <div>
+        <h1 id="name">Michelle L. Detuya</h1>
+        <p class="intro">Introduction: <span class="unknown">Not provided yet.</span></p>
+      </div>
+    </section>
+    <section aria-label="Profile details">
+      <h2>Personal information</h2><p class="unknown">Not provided yet.</p>
+      <h2>Hobbies</h2><p class="unknown">Not provided yet.</p>
+      <h2>Top three favorite foods</h2><ul><li class="unknown">Not provided yet.</li></ul>
+      <h2>Favorite website</h2><p class="unknown">Not provided yet.</p>
+    </section>
+  </main>
+</body>
+</html>
