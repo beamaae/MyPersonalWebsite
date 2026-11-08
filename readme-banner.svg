@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-labelledby="title description">
+  <title id="title">Beamae Ejercito — Personal Profile</title>
+  <desc id="description">A black banner with red and blue design accents.</desc>
+  <defs>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e50914"/>
+      <stop offset="1" stop-color="#287bff"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#e50914" stop-opacity=".22"/>
+      <stop offset="1" stop-color="#287bff" stop-opacity=".2"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="320" rx="24" fill="#080808"/>
+  <circle cx="1030" cy="150" r="210" fill="url(#glow)"/>
+  <path d="M0 278 C280 200 420 340 720 254 S1050 200 1200 245" fill="none" stroke="url(#accent)" stroke-width="5" opacity=".9"/>
+  <path d="M0 296 C280 218 420 358 720 272 S1050 218 1200 263" fill="none" stroke="#287bff" stroke-width="2" opacity=".65"/>
+  <rect x="72" y="70" width="8" height="170" rx="4" fill="url(#accent)"/>
+  <text x="112" y="145" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="52" font-weight="700" letter-spacing="1">BEAMAE EJERCITO</text>
+  <text x="114" y="196" fill="#c9c9c9" font-family="Arial, Helvetica, sans-serif" font-size="25">BSIT Student · NORSU Bais</text>
+  <text x="114" y="238" fill="#287bff" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700" letter-spacing="4">BLACK  /  RED  /  BLUE</text>
+  <circle cx="1080" cy="112" r="42" fill="none" stroke="#e50914" stroke-width="3"/>
+  <circle cx="1080" cy="112" r="26" fill="none" stroke="#287bff" stroke-width="3"/>
+  <circle cx="1080" cy="112" r="9" fill="#e50914"/>
+</svg>
