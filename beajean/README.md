@@ -1,5 +1,7 @@
 # Bea Jean Profile
 
+![Bea Jean](../bea%20jean.jpg)
+
 ## Theme
 Pink
 
