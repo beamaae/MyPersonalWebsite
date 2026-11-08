@@ -6,9 +6,6 @@
 
 <h1 style="color: #e94b91; text-align: center; margin-top: 18px; margin-bottom: 8px;">Bea Jean Profile</h1>
 
-<h2 style="color: #c61b6f; margin-bottom: 8px;">Theme</h2>
-<p style="margin-top: 0; font-weight: 700; color: #d84f96;">Pink</p>
-
 <h2 style="color: #c61b6f; margin-bottom: 8px;">Introduction</h2>
 <p style="margin-top: 0; line-height: 1.7; font-size: 16px;">"Hi! I am Bea Jean. I am someone who enjoys relaxing, watching movies, and appreciating the simple things in life. Get to know more about me through my personal website!"</p>
 

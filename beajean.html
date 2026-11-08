@@ -8,12 +8,12 @@
   <style>
     :root { --pink: #e94b91; --pale: #fff0f6; --ink: #3d2935; --muted: #715e69; }
     * { box-sizing: border-box; }
-    body { min-height: 100vh; margin: 0; padding: 24px; font-family: Arial, Helvetica, sans-serif; color: var(--ink); background: linear-gradient(145deg, #fff7fb, #ffe5f0); }
-    main { width: min(100%, 760px); margin: 0 auto; padding: clamp(24px, 6vw, 48px); background: #fff; border: 1px solid #f8d5e5; border-radius: 24px; box-shadow: 0 18px 50px #7f315219; }
+    body { min-height: 100vh; margin: 0; padding: 24px; font-family: Arial, Helvetica, sans-serif; color: var(--ink); background: linear-gradient(145deg, #ffe5f0, #ffc1dc); }
+    main { width: min(100%, 760px); margin: 0 auto; padding: clamp(24px, 6vw, 48px); background: #fff0f6; border: 1px solid #f8bcd5; border-radius: 24px; box-shadow: 0 18px 50px #7f315219; }
     .back { display: inline-block; margin-bottom: 24px; color: #a52e67; font-weight: 700; text-underline-offset: 4px; }
     .back:focus-visible, a:focus-visible { outline: 3px solid #f4a8c9; outline-offset: 4px; }
     .profile { display: grid; grid-template-columns: minmax(120px, 190px) 1fr; gap: 28px; align-items: center; }
-    .profile img { display: block; width: 100%; aspect-ratio: 1; object-fit: cover; border: 6px solid var(--pale); border-radius: 50%; }
+    .profile img { display: block; width: 100%; aspect-ratio: 1; object-fit: cover; border: 6px solid #ffd6e9; border-radius: 50%; }
     h1 { margin: 0 0 10px; color: var(--pink); font-size: clamp(1.8rem, 6vw, 2.7rem); line-height: 1.15; }
     .intro { color: var(--muted); line-height: 1.65; }
     h2 { margin: 28px 0 8px; color: #a52e67; font-size: 1.15rem; }
@@ -22,7 +22,6 @@
     dl { display: grid; grid-template-columns: max-content 1fr; gap: 6px 12px; margin: 0; }
     dt { font-weight: 700; }
     dd { margin: 0; }
-    .theme { color: var(--pink); font-weight: 700; }
     @media (max-width: 520px) { body { padding: 14px; } .profile { grid-template-columns: 1fr; gap: 18px; } .profile img { width: min(58vw, 190px); } }
   </style>
 </head>
@@ -37,9 +36,6 @@
       </div>
     </section>
     <section aria-label="Profile details">
-      <h2>Theme</h2>
-      <p class="theme">Pink</p>
-
       <h2>About Me</h2>
       <dl>
         <dt>Full Name</dt><dd>Bea Jean</dd>
