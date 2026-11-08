@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Bea Jean A. Bacaoco's kakamPINK profile.">
-  <title>Bea Jean A. Bacaoco | kakamPINK</title>
+  <meta name="description" content="Bea Jean's pink personal profile.">
+  <title>Bea Jean | kakamPINK</title>
   <style>
     :root { --pink: #e94b91; --pale: #fff0f6; --ink: #3d2935; --muted: #715e69; }
     * { box-sizing: border-box; }
@@ -17,9 +17,11 @@
     h1 { margin: 0 0 10px; color: var(--pink); font-size: clamp(1.8rem, 6vw, 2.7rem); line-height: 1.15; }
     .intro { color: var(--muted); line-height: 1.65; }
     h2 { margin: 28px 0 8px; color: #a52e67; font-size: 1.15rem; }
-    p, ul { line-height: 1.65; }
+    p, ul, dl { line-height: 1.65; }
     ul { margin: 0; padding-left: 1.35rem; }
-    .unknown { color: var(--muted); }
+    dl { display: grid; grid-template-columns: max-content 1fr; gap: 6px 12px; margin: 0; }
+    dt { font-weight: 700; }
+    dd { margin: 0; }
     @media (max-width: 520px) { body { padding: 14px; } .profile { grid-template-columns: 1fr; gap: 18px; } .profile img { width: min(58vw, 190px); } }
   </style>
 </head>
@@ -27,17 +29,27 @@
   <main>
     <a class="back" href="index.html">← Back to kakamPINK</a>
     <section class="profile" aria-labelledby="name">
-      <img src="bea jean.jpg" alt="Profile picture for Bea Jean A. Bacaoco">
+      <img src="bea jean.jpg" alt="Profile picture for Bea Jean">
       <div>
-        <h1 id="name">Bea Jean A. Bacaoco</h1>
-        <p class="intro">Introduction: <span class="unknown">Not provided yet.</span></p>
+        <h1 id="name">Bea Jean</h1>
+        <p class="intro">Hi! I am Bea Jean. I am someone who enjoys relaxing, watching movies, and appreciating the simple things in life. Get to know more about me through my personal website!</p>
       </div>
     </section>
     <section aria-label="Profile details">
-      <h2>Personal information</h2><p class="unknown">Not provided yet.</p>
-      <h2>Hobbies</h2><p class="unknown">Not provided yet.</p>
-      <h2>Top three favorite foods</h2><ul><li class="unknown">Not provided yet.</li></ul>
-      <h2>Favorite website</h2><p class="unknown">Not provided yet.</p>
+      <h2>About Me</h2>
+      <dl>
+        <dt>Full name</dt><dd>Bea Jean</dd>
+        <dt>Birthday</dt><dd>November 2, 2007</dd>
+        <dt>Hometown</dt><dd>Mabinay, Negros Oriental</dd>
+      </dl>
+      <h2>Favorite Color</h2>
+      <p>Pink</p>
+      <h2>Hobbies</h2>
+      <ul><li>Sleeping</li><li>Watching movies</li></ul>
+      <h2>Favorite Food</h2>
+      <p>Pizza</p>
+      <h2>Favorite Website</h2>
+      <p><a href="https://www.netflix.com/" target="_blank" rel="noopener noreferrer">Netflix</a></p>
     </section>
   </main>
 </body>
