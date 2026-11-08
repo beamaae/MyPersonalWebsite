@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Bea Jean's pink personal profile.">
+  <meta name="description" content="Bea Jean personal profile.">
   <title>Bea Jean | kakamPINK</title>
   <style>
     :root { --pink: #e94b91; --pale: #fff0f6; --ink: #3d2935; --muted: #715e69; }
@@ -22,6 +22,7 @@
     dl { display: grid; grid-template-columns: max-content 1fr; gap: 6px 12px; margin: 0; }
     dt { font-weight: 700; }
     dd { margin: 0; }
+    .theme { color: var(--pink); font-weight: 700; }
     @media (max-width: 520px) { body { padding: 14px; } .profile { grid-template-columns: 1fr; gap: 18px; } .profile img { width: min(58vw, 190px); } }
   </style>
 </head>
@@ -32,22 +33,32 @@
       <img src="bea jean.jpg" alt="Profile picture for Bea Jean">
       <div>
         <h1 id="name">Bea Jean</h1>
-        <p class="intro">Hi! I am Bea Jean. I am someone who enjoys relaxing, watching movies, and appreciating the simple things in life. Get to know more about me through my personal website!</p>
+        <p class="intro">"Hi! I am Bea Jean. I am someone who enjoys relaxing, watching movies, and appreciating the simple things in life. Get to know more about me through my personal website!"</p>
       </div>
     </section>
     <section aria-label="Profile details">
+      <h2>Theme</h2>
+      <p class="theme">Pink</p>
+
       <h2>About Me</h2>
       <dl>
-        <dt>Full name</dt><dd>Bea Jean</dd>
+        <dt>Full Name</dt><dd>Bea Jean</dd>
         <dt>Birthday</dt><dd>November 2, 2007</dd>
         <dt>Hometown</dt><dd>Mabinay, Negros Oriental</dd>
       </dl>
+
       <h2>Favorite Color</h2>
       <p>Pink</p>
+
       <h2>Hobbies</h2>
-      <ul><li>Sleeping</li><li>Watching movies</li></ul>
+      <ul>
+        <li>Sleeping</li>
+        <li>Watching Movies</li>
+      </ul>
+
       <h2>Favorite Food</h2>
       <p>Pizza</p>
+
       <h2>Favorite Website</h2>
       <p><a href="https://www.netflix.com/" target="_blank" rel="noopener noreferrer">Netflix</a></p>
     </section>
