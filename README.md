@@ -83,6 +83,11 @@ Our community continues to show its commitment to environmental cleanliness.
 
 ### Photo Gallery
 
+<div align="center">
+  <img src="pang%20limpyo.jpg" alt="Barangay clean-up drive" width="500" />
+  <img src="kugihan.jpg" alt="Community cleanup photo" width="500" />
+</div>
+
 ## PROPER WASTE SEGREGATION
 
 Waste segregation helps reduce pollution and promotes recycling and responsible waste management.
